@@ -66,6 +66,11 @@ var RankingList = /** @class */ (function (_super) {
             rankingData.forEach(function (item, index) {
                 var node = cc.instantiate(_this.rankItemPrefab);
                 var rankItemComp = node.getComponent(RankItem_1.default);
+                if (item.name === "YOU") {
+                    rankItemComp.rankLabel.node.color = cc.Color.YELLOW;
+                    rankItemComp.levelLabel.node.color = cc.Color.YELLOW;
+                    rankItemComp.nameLabel.node.color = cc.Color.YELLOW;
+                }
                 rankItemComp.init(index + 1, item.level, item.name);
                 content.addChild(node);
             });

@@ -173,7 +173,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Label",
+    "_name": "Close New Label",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -484,7 +484,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Label",
+    "_name": "Home New Label",
     "_objFlags": 0,
     "_parent": {
       "__id__": 10
@@ -810,8 +810,8 @@
     "target": {
       "__id__": 1
     },
-    "component": "PauseDialog",
-    "_componentId": "",
+    "component": "",
+    "_componentId": "83fb9osUoVEppfk8B6mkJYV",
     "handler": "click_home",
     "customEventData": ""
   },
@@ -903,7 +903,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Label",
+    "_name": "Restart New Label",
     "_objFlags": 0,
     "_parent": {
       "__id__": 21
@@ -1322,7 +1322,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Label",
+    "_name": "Request Help New Label",
     "_objFlags": 0,
     "_parent": {
       "__id__": 32
@@ -1703,6 +1703,11 @@
     "hasWidget": false,
     "opacity": 160,
     "childrenAnimation": false,
+    "guideLabel": null,
+    "startLabel": null,
+    "ch_FontSize": 25,
+    "vi_FontSize": 16,
+    "eng_FontSize": 20,
     "_id": ""
   },
   {
@@ -1746,6 +1751,21 @@
       "__id__": 1
     },
     "_enabled": true,
+    "closeLabel": {
+      "__id__": 4
+    },
+    "homeLabel": {
+      "__id__": 12
+    },
+    "restartLabel": {
+      "__id__": 23
+    },
+    "requestHelpLabel": {
+      "__id__": 34
+    },
+    "ch_FontSize": 25,
+    "vi_FontSize": 18,
+    "eng_FontSize": 18,
     "_id": ""
   },
   {

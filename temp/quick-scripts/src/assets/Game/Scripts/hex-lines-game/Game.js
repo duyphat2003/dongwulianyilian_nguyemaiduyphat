@@ -180,6 +180,7 @@ var LineGame = /** @class */ (function (_super) {
                 Info_1.UserInfo.timePassed = 0;
                 Info_1.UserInfo.stepUsed = 0;
                 _this._isGameOver = false;
+                cc.director.loadScene("Game");
                 _this.loadLevel(Info_1.UserInfo.currentLevel);
             },
             onQuit: function () {
