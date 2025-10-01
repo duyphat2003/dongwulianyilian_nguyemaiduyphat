@@ -242,6 +242,7 @@ export default class LineGame extends cc.Component
                 UserInfo.timePassed = 0;
                 UserInfo.stepUsed = 0;
                 this._isGameOver = false;
+                cc.director.loadScene("Game");
                 this.loadLevel(UserInfo.currentLevel);
             },
             onQuit: () => {

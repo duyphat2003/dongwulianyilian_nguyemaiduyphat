@@ -74,6 +74,12 @@ export default class RankingList extends cc.Component {
             rankingData.forEach((item, index) => {
             const node = cc.instantiate(this.rankItemPrefab);
             const rankItemComp = node.getComponent(RankItem);
+                if (item.name === "YOU") {
+                    rankItemComp.rankLabel.node.color = cc.Color.YELLOW;
+                    rankItemComp.levelLabel.node.color = cc.Color.YELLOW;
+                    rankItemComp.nameLabel.node.color = cc.Color.YELLOW;
+
+            }
             rankItemComp.init(index + 1, item.level, item.name);
             content.addChild(node);
         });
